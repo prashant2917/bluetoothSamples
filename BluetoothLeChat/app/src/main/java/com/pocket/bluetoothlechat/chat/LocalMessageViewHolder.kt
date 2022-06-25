@@ -13,13 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.bluetoothlechat.scan
+package com.pocket.bluetoothlechat.chat
 
-import android.bluetooth.BluetoothDevice
+import android.view.View
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.pocket.bluetoothlechat.bluetooth.Message
+import com.example.bluetoothlechat.R
 
-sealed class DeviceScanViewState {
-    object ActiveScan: DeviceScanViewState()
-    class ScanResults(val scanResults: Map<String, BluetoothDevice>): DeviceScanViewState()
-    class Error(val message: String): DeviceScanViewState()
-    object AdvertisementNotSupported: DeviceScanViewState()
+class LocalMessageViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+
+    private val messageText = itemView.findViewById<TextView>(R.id.message_text)
+
+    fun bind(message: Message.LocalMessage) {
+        messageText.text = message.text
+    }
 }

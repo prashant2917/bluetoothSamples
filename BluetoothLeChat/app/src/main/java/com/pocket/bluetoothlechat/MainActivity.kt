@@ -13,11 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.bluetoothlechat
+package com.pocket.bluetoothlechat
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.bluetoothlechat.bluetooth.ChatServer
+import com.example.bluetoothlechat.R
+import com.pocket.bluetoothlechat.bluetooth.ChatServer
 
 class MainActivity : AppCompatActivity() {
 

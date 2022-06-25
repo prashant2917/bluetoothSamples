@@ -21,7 +21,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.example.bluetoothlechat"
+        applicationId "com.pocket.bluetoothlechat"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

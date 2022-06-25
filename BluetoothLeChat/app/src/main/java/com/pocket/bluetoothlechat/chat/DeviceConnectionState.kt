@@ -13,19 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.bluetoothlechat.chat
+package com.pocket.bluetoothlechat.chat
 
-import android.view.View
-import android.widget.TextView
-import androidx.recyclerview.widget.RecyclerView
-import com.example.bluetoothlechat.bluetooth.Message
-import com.example.bluetoothlechat.R
+import android.bluetooth.BluetoothDevice
 
-class RemoteMessageViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
-    private val messageText = itemView.findViewById<TextView>(R.id.message_text)
-
-    fun bind(message: Message.RemoteMessage) {
-        messageText.text = message.text
-    }
+sealed class DeviceConnectionState {
+    class Connected(val device: BluetoothDevice) : DeviceConnectionState()
+    object Disconnected : DeviceConnectionState()
 }

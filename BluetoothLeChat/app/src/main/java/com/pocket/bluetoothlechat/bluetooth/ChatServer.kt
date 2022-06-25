@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.bluetoothlechat.bluetooth
+package com.pocket.bluetoothlechat.bluetooth
 
 import android.app.Application
 import android.bluetooth.*
@@ -26,8 +26,8 @@ import android.os.ParcelUuid
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.bluetoothlechat.bluetooth.Message.RemoteMessage
-import com.example.bluetoothlechat.chat.DeviceConnectionState
+import com.pocket.bluetoothlechat.bluetooth.Message.RemoteMessage
+import com.pocket.bluetoothlechat.chat.DeviceConnectionState
 
 private const val TAG = "ChatServer"
 

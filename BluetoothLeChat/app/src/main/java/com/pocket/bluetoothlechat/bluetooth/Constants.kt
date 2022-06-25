@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.bluetoothlechat.bluetooth
+package com.pocket.bluetoothlechat.bluetooth
 import java.util.*
 
 /**

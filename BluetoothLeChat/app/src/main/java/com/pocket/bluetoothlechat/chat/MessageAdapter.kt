@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.bluetoothlechat.chat
+package com.pocket.bluetoothlechat.chat
 
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.bluetoothlechat.bluetooth.Message
+import com.pocket.bluetoothlechat.bluetooth.Message
 import com.example.bluetoothlechat.R
 import java.lang.IllegalArgumentException
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.bluetoothlechat.bluetooth
+package com.pocket.bluetoothlechat.bluetooth
 
 import android.app.Activity
 import android.bluetooth.BluetoothAdapter
